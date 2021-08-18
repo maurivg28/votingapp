@@ -2,9 +2,9 @@ pipeline {
     environment {
         registry = "maurivg25/maurirepo"
         registryCredential = 'dockerHub'
+        dockerImage = ''
     }
     agent any
-
     stages {
         stage('Clone Repo') {
             steps {
