@@ -7,7 +7,9 @@ pipeline {
 
     stages {
         stage('Clone Repo') {
-            steps git 'https://github.com/maurivg28/votingapp.git'
+            steps {
+                git 'https://github.com/maurivg28/votingapp.git'
+            }
         }
     }
         stage ('Build Image') {
